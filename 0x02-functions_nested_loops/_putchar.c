@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 
-char Myfunction (char c) {
+char _putchar(char c) {
 return (putchar(c));
 }
 
