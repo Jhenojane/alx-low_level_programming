@@ -13,7 +13,7 @@ int main(void)
 	int length = sizeof(aputchar) / sizeof(aputchar[0]);
 	int i;
 		for (i = 0; i < length; i++)
-			_putchar(aputchar[i]);	
+			_putchar(aputchar[i]);
 		_putchar('\n');
 
 
