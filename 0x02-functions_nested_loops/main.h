@@ -1,0 +1,1 @@
+void Myfunction (char c);
