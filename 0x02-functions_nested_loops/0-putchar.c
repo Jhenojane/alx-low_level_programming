@@ -7,14 +7,13 @@
  * Return: 0.
  */
 
-int main(void) 
+int main(void)
 {
 	char aputchar[] = { '_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-	int length = sizeof(aputchar) / sizeof(aputchar[0]);    
+	int length = sizeof(aputchar) / sizeof(aputchar[0]);
 	int i;
-		for (i = 0; i < length; i++) 
-			_putchar(aputchar[i]);
-		
+		for (i = 0; i < length; i++)
+			_putchar(aputchar[i]);	
 		_putchar('\n');
 
 
