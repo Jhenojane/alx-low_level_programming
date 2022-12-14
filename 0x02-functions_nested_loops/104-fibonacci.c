@@ -3,42 +3,71 @@
 
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - something
+ * Return: something
  */
-
-
 
 int main(void)
 
 {
 
-	int i;
-
-	long int fibonacci[50], sum = 2;
+	unsigned long int i, j, k, j1, j2, k1, k2;
 
 
 
-	fibonacci[0] = 1;
+	j = 1;
 
-	fibonacci[1] = 2;
+	k = 2;
 
 
 
-	for (i = 2; i < 50; i++)
+	printf("%lu", j);
+
+
+
+	for (i = 1; i < 91; i++)
 
 	{
 
-		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+		printf(", %lu", k);
 
-		if ((fibonacci[i] % 2) == 0 && fibonacci[i] < 4000000)
+		k = k + j;
 
-			sum += fibonacci[i];
+		j = k - j;
 
 	}
 
-	printf("%ld\n", sum);
+
+
+	j1 = j / 1000000000;
+
+	j2 = j % 1000000000;
+
+	k1 = k / 1000000000;
+
+	k2 = k % 1000000000;
+
+
+
+	for (i = 92; i < 99; ++i)
+
+	{
+
+		printf(", %lu", k1 + (k2 / 1000000000));
+
+		printf("%lu", k2 % 1000000000);
+
+		k1 = k1 + j1;
+
+		j1 = k1 - j1;
+
+		k2 = k2 + j2;
+
+		j2 = k2 - j2;
+
+	}
+
+	printf("\n");
 
 
 
