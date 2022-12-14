@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - Check description
+ * print_alphabet - Check description
  * Description: It prints the word Holberton, followed by a new line.
  * Return: 0.
  */
